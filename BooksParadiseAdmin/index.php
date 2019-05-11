@@ -11,10 +11,7 @@
 
 <body>
     <?php
-        session_start();
-        if (!isset($_SESSION['dangnhap'])){
-            header('location:login.php');
-        }
+        
         include('modules/config.php');
         include('modules/header.php');
         if(!isset ($_GET['quanly'])){
