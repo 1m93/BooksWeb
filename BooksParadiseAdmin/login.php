@@ -16,7 +16,7 @@
         if (isset($_POST['login'])){
             $username = $_POST['username'];
             $password = $_POST['password'];
-            $sql = "select * from admin where username='$username' and password='$password' LIMIT 1";
+            $sql = "select * from public.admin where username='$username' and password='$password' LIMIT 1";
             $query = mysqli_query($conn, $sql);
             $nums = mysqli_num_rows($query);
             if ($nums > 0){
