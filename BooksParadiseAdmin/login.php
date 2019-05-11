@@ -13,7 +13,6 @@
     <?php
         include('modules/config.php');
         session_start();
-        session_destroy();
         if (isset($_POST['login'])){
             $username = $_POST['username'];
             $password = $_POST['password'];
